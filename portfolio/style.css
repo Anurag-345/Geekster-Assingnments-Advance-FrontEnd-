@@ -1,0 +1,138 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lato", sans-serif;
+  font-family: "Lobster", cursive;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Petemoss", cursive;
+  font-family: "Roboto Slab", serif;
+  font-family: "Titillium Web", sans-serif;
+}
+body {
+    height:100vh;
+    width: 100vw;
+}
+a{
+ text-decoration: none !important;
+
+}
+
+
+header{
+  margin: 0 !important;
+  padding: 0 !important;
+    height: 90vh;
+    width:100vw;
+    background: linear-gradient(rgba(28, 28, 32, 0.8), rgba(20, 20, 24, 0.8)),url('images/PicsArt_12-30-04.58.50.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+   
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4em;
+  align-items:center;
+ 
+  
+}
+.nav-head{
+  display:flex;
+}
+#hamBurger{
+  height: 2em;
+  width: 2em;
+  display: none;
+  margin-left: 0.5em;
+}
+
+#welcome{
+    color:whitesmoke;
+    margin-left:1em;
+   
+  
+}
+
+.sidenav{
+  
+  height: 100vh !important;
+  width:250px;
+  position:fixed;
+  background-color:#bbbaba;
+  display: none;
+  z-index:100!important;
+}
+
+.sidenav ul{
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  list-style: none !important;
+}
+
+.sidenav ul li {
+  margin:0.5em 0em;
+}
+
+.sidenav ul li a{
+  color:whitesmoke;
+}
+
+#sidenavCross{
+  height: 2em;
+  width: 2em;
+  margin:1em 0 0 1em;
+}
+
+.nav-items ul {
+ 
+  display: flex;
+  gap: 3rem;
+  list-style: none !important;
+}
+
+.nav-items ul li a {
+  color:whitesmoke;
+  
+}
+
+
+
+.header-intro{
+  /* background-color:yellow; */
+  width: fit-content;
+  position: relative;
+  top: 45%;
+  left:10%;
+  /* margin-top:15em; */
+  color:whitesmoke;
+}
+
+/* media query section */
+
+@media screen and (max-width:700px){
+
+  .header-intro{
+    position: relative;
+    left: 10%;
+
+  }
+
+  #hamBurger{
+    display:initial;
+  }
+
+  .nav-items{
+    display: none;
+  }
+  nav{
+    /* padding-left:1em; */
+  }
+  #welcome{
+     margin-left:0.5em;
+  }
+  
+}
+

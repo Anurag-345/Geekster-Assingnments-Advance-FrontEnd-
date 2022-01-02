@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+body{
+  height:100vh;
+  width:100vw;
+  color:#5F6468;
+  
+    font-family: "Lato", sans-serif;
+  font-family: "Lobster", cursive;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Petemoss", cursive;
+  font-family: "Roboto Slab", serif;
+  font-family: "Titillium Web", sans-serif;
+
+}
+.main{
+    display: flex;
+}
+hr{
+    margin: 0;
+}
+span{
+    cursor:pointer;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    height: 4em;
+}
+.heading{
+    display:flex;
+    margin: 0 10em 0 1.2em;
+    align-items: center;
+   
+}
+
+#logo{
+    height:2.5em;
+}
+
+#user-img{
+    height:2.5em;
+    border-radius:100%;
+    margin-left:1em ;
+}
+
+.search input{
+    width:35em;
+    border:none;
+    height: 3em;
+    background-color:#F1F3F4 ;
+
+}
+.search{
+    display: flex;
+    align-items:center;
+    border-radius:10px; 
+    background-color:#F1F3F4 ;
+    padding:0 1em;
+
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    gap:0.5em;
+    margin-left:auto;
+  
+}
+
+.buttons{
+    display: flex;
+    gap: 1em;
+}
+.login{
+    display:flex;
+    align-items: center;
+    margin:1em;
+}
+
+aside{
+    width:15vw;
+    /* margin-right: 4rem; */
+   
+}
+
+.sideNav{
+    list-style: none;
+     
+}
+.sideNav li{
+    margin-top: 1em !important;
+
+}  
+
+.sideNav li span{
+   margin-right:1em;
+   
+
+}  
+
+section{
+    display: flex;
+    width:80vw;
+    
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5em;
+    border-bottom: 1px solid #d7D9DA ;
+
+}
+
+.top-bar select{
+    border:none;
+}
+
+.top-bar select option{
+
+}
+
+.side-bar{
+    width: 5vw;
+    padding-top:1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:2em;
+    border-left: 1px solid #d7D9DA ;
+    height:100vh;
+
+}
+
+.files{
+    
+    display:flex;
+    gap:5em;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+   
+
