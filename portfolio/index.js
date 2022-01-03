@@ -11,4 +11,4 @@ ham.addEventListener('click', () => {
 const cross = document.getElementById('sidenavCross');
 cross.addEventListener('click', () => {
     sidenav.style.display = "none";
-})
+});

@@ -33,7 +33,7 @@
             <span class="material-icons">
                 search
             </span>
-            <input type="text" placeholder="search in Drive">
+            <input id="search" type="text" placeholder="search in Drive" autocomplete="off">
             <span class="material-icons">
                 tune
             </span>
@@ -65,7 +65,7 @@
     <hr>
     <div class="main">
         <aside>
-            <button id="addNew"><span class="material-icons">add</span>New</button>
+            <button id="addNew"><span class="material-icons me-3">add</span>New</button>
             <ul class="sideNav">
                 <li><span class="material-icons">insert_drive_file</span>My Drive</li>
                 <li><span class="material-icons">
@@ -76,8 +76,7 @@
                     </span>Shared with me</li>
                 <li><span class="material-icons">
                         watch_later
-                    </span>
-                    Recent</li>
+                    </span>Recent</li>
                 <li><span class="material-icons">
                         star_outline
                     </span>Starred</li>
@@ -87,13 +86,12 @@
             </ul>
             <hr>
             <div class="storage">
-                <p><span class="material-icons">
+                <p><span class="material-icons mt-3 me-2">
                         cloud_queue
                     </span>Storage(97% full)</p>
                 <progress id="file" value="97" max="100"> 32% </progress>
                 <p>14.62 GB of 15 GB used </p>
-                <button id="buyStor">Buy storage</button>
-
+                <button id="buyStorage">Buy storage</button>
             </div>
 
 
@@ -110,140 +108,75 @@
                         <option>shgshgs</option>
                     </select>
                     <div>
-                        <span class="material-icons " id="btn">
+                        <span class="material-icons " id="listBtn">
+                            list
+                        </span>
+                        <span class="material-icons " id="boxBtn">
                             list
                         </span>
 
                         <span class="material-icons me-4 ms-4">
                             info
                         </span>
+
                     </div>
                 </div>
 
                 <p class="mt-3 mb-3">Folders</p>
 
-                <div class="files">
+                <div class="file_details">
+                    <p>Name <span class="material-icons">arrow_upward</span></p>
+                    <p>Owner</p>
+                    <p>Last modified</p>
+                    <p>File size</p>
+                </div>
 
 
-                    <div class="files">
-                        <div class="card" style="width: 12rem;">
-                            <img class="card-img-top"
-                                src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text"> the card title and make up the
-                                    bulk of the card's
-                                    content.</p>
+                <div class="box-format">
+                    <div class="folder">File name</div>
+                    <div class="folder">File name</div>
+                    <div class="folder">File name</div>
+                    <div class="folder">File name</div>
+                    <div class="folder">File name</div>
+                    <div class="folder">File name</div>
+                    <div class="folder">File name</div>
+                    <div class="folder">File name</div>
+                    <div class="folder">File name</div>
+                    <div class="folder">File name</div>
+                </div>
 
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="files">
-                        <div class="card" style="width: 12rem;">
-                            <img class="card-img-top"
-                                src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text"> the card title and make up the
-                                    bulk of the card's
-                                    content.</p>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="files">
-                        <div class="card" style="width: 12rem;">
-                            <img class="card-img-top"
-                                src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text"> the card title and make up the
-                                    bulk of the card's
-                                    content.</p>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="files">
-                        <div class="card" style="width: 12rem;">
-                            <img class="card-img-top"
-                                src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text"> the card title and make up the
-                                    bulk of the card's
-                                    content.</p>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="files">
-                        <div class="card" style="width: 12rem;">
-                            <img class="card-img-top"
-                                src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text"> the card title and make up the
-                                    bulk of the card's
-                                    content.</p>
-
-                            </div>
-                        </div>
-
-                        <div class="files">
-                            <div class="card" style="width: 12rem;">
-                                <img class="card-img-top"
-                                    src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text"> the card title and make up the
-                                        bulk of the card's
-                                        content.</p>
-
-                                </div>
-                            </div>
-
-                            <div class="files">
-                                <div class="card" style="width: 12rem;">
-                                    <img class="card-img-top"
-                                        src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                        alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text"> the card title and make up the
-                                            bulk of the card's
-                                            content.</p>
-
-                                    </div>
-                                </div>
-
-                                <div class="files">
-                                    <div class="card" style="width: 12rem;">
-                                        <img class="card-img-top"
-                                            src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text"> the card title and make up the
-                                                bulk of the card's
-                                                content.</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
+                <div class="list-format">
+                    <div class="folder"><span><span class="material-icons me-3">
+                                folder
+                            </span>File name</span><span></span></div>
+                    <div class="folder"><span><span class="material-icons me-3">
+                                folder
+                            </span>File name</span></div>
+                    <div class="folder"><span><span class="material-icons me-3">
+                                folder
+                            </span>File name</span></div>
+                    <div class="folder"><span><span class="material-icons me-3">
+                                folder
+                            </span>File name</span></div>
+                    <div class="folder"><span><span class="material-icons me-3">
+                                folder
+                            </span>File name</span></div>
+                    <div class="folder"><span><span class="material-icons me-3">
+                                folder
+                            </span>File name</span></div>
+                    <div class="folder"><span><span class="material-icons me-3">
+                                folder
+                            </span>File name</span></div>
+                    <div class="folder"><span><span class="material-icons me-3">
+                                folder
+                            </span>File name</span></div>
+                    <div class="folder"><span><span class="material-icons me-3">
+                                folder
+                            </span>File name</span></div>
+                    <div class="folder"><span><span class="material-icons me-3">
+                                folder
+                            </span>File name</span></div>
+                </div>
 
         </section>
         <div class="side-bar">

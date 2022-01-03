@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -26,6 +27,24 @@ hr{
 }
 span{
     cursor:pointer;
+    
+}
+
+span:hover{
+   padding: 5px;
+   background: #d7d7da;
+   border-radius:50%;
+}
+
+
+.sideNav li:hover{
+    transition: 0.2s ease-out;
+    padding: 5px;
+    border-radius: 20px;
+    background: #d7d7da;
+}
+button:hover{
+  transform: scale(0.9);
 }
 
 nav{
@@ -48,6 +67,11 @@ nav{
     height:2.5em;
     border-radius:100%;
     margin-left:1em ;
+}
+
+#search:focus{
+    outline: none;
+
 }
 
 .search input{
@@ -86,7 +110,19 @@ nav{
 
 aside{
     width:15vw;
-    /* margin-right: 4rem; */
+    margin-right: 4rem;
+    
+}
+
+#addNew{
+    padding:13px 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    border:none;
+    background: transparent;
+    box-shadow: 2px 2px 5px #d7D9DA;
+    margin: 1em;
    
 }
 
@@ -105,9 +141,22 @@ aside{
 
 }  
 
+.storage{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buyStorage{
+    padding:3px 15px;
+     border: 1px solid #d7D9DA ;
+     color:#da0505;
+     background: transparent;
+}
 section{
     display: flex;
-    width:80vw;
+    width:78vw;
     
 }
 
@@ -116,6 +165,7 @@ section{
     align-items: center;
     justify-content: space-between;
     height: 3.5em;
+    width:78vw;
     border-bottom: 1px solid #d7D9DA ;
 
 }
@@ -140,14 +190,54 @@ section{
 
 }
 
-.files{
-    
+.file_details{
+    width: 78vw;
+    height:fit-content;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-top: 1px solid #d7D9DA ;
+    border-bottom: 1px solid #d7D9DA ;
+    padding-right: 1em ; 
+    margin-bottom: 2em;
+    display:none;
+  
+}
+   
+
+.box-format{
     display:flex;
-    gap:5em;
+    /* justify-content: center; */
+    align-items: center;
     flex-wrap: wrap;
-    flex-direction: row;
 }
 
-
+.box-format .folder{
+    height: 30vh;
+    width: 15vw;
+    /* background-color: red; */
+    border: 1px solid #d7D9DA ;
    
+    margin:0.3em;
+    padding: 0.3em;
+   
+}
+
+.list-format{
+    height: fit-content;
+}
+.list-format .folder{
+    display: flex;
+    align-items:center;
+    height: 3em;
+    border-top: 1px solid #d7D9DA;
+    border-bottom: 1px solid #d7D9DA;
+    /* display:none; */
+   
+}
+
+#boxBtn{
+    display:none;
+}
+
 
