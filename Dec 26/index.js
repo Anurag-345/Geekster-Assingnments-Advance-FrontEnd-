@@ -14,7 +14,6 @@ listbtn.addEventListener('click', () => {
 });
 
 boxbtn.addEventListener('click', () => {
-   
    box.style.display="flex";
    list.style.display ="none";
    listbtn.style.display = "initial";
