@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.addBtn{
+    padding: 20px;
+    background-color: rgb(155, 153, 153);
+    width: fit-content;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+}
+.addBtn:hover{
+    background-color: black;
+}

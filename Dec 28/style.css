@@ -53,6 +53,8 @@ body {
     grid-template-columns: repeat(3,10fr);
     gap:0.3em;
     background-color: var(--secondary-color);
+    /* padding: 2em; */
+
 
 }
 .cells{

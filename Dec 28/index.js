@@ -1,6 +1,6 @@
 const heading = document.getElementById('heading');
 const rstBtn = document.getElementById('rstBtn');
-
+const winner = document.getElementById('winner');
 const gameCells = document.querySelectorAll('.cells');
 
 var isXturn = true;
@@ -11,6 +11,8 @@ rstBtn.addEventListener('click',function(){
     window.location.reload();
 
 });
+
+
 
 
 const checkGameStatus = () => {
@@ -27,112 +29,122 @@ const checkGameStatus = () => {
 
     if(index0ClassList.contains('o')){
         if(index1ClassList.contains('o') && index2ClassList.contains('o')){
-            alert("O won");
+            winner.innerHTML= "<span style ='color:green'>O</span> Won!";
+            grid
         }
     }
+
     if(index0ClassList.contains('x')){
         if(index1ClassList.contains('x') && index2ClassList.contains('x')){
-            alert("X won");
+            winner.innerHTML= "<span style ='color:green'>X</span> Won!";
+            
         }
     }
 
     if(index3ClassList.contains('o')){
         if(index4ClassList.contains('o') && index5ClassList.contains('o')){
-            alert("O won");
+            winner.innerHTML= "<span style ='color:green'>O</span> Won!";
+            
         }
     }
 
     if(index3ClassList.contains('x')){
         if(index4ClassList.contains('x') && index5ClassList.contains('x')){
-            alert("X won");
+            winner.innerHTML= "<span style ='color:green'>X</span> Won!";
+            
         }
     }
 
-
-
     if(index6ClassList.contains('o')){
         if(index7ClassList.contains('o') && index8ClassList.contains('o')){
-            alert("O won");
+            winner.innerHTML= "<span style ='color:green'>O</span> Won!";
+            ;
+            
+
         }
     }
 
     if(index6ClassList.contains('x')){
         if(index7ClassList.contains('x') && index8ClassList.contains('x')){
-            alert("X won");
+            winner.innerHTML= "<span style ='color:green'>X</span> Won!";
+            
         }
     }
 
-
-
     if(index0ClassList.contains('o')){
         if(index3ClassList.contains('o') && index6ClassList.contains('o')){
-            alert("O won");
+            winner.innerHTML= "<span style ='color:green'>O</span> Won!";
+            
         }
     }
 
     if(index0ClassList.contains('x')){
         if(index3ClassList.contains('x') && index6ClassList.contains('x')){
-            alert("X won");
+            winner.innerHTML= "<span style ='color:green'>X</span> Won!";
+            
         }
     }
 
 
     if(index1ClassList.contains('o')){
         if(index4ClassList.contains('o') && index7ClassList.contains('o')){
-            alert("O won");
+            winner.innerHTML= "<span style ='color:green'>O</span> Won!";
+            
         }
     }
 
     if(index1ClassList.contains('x')){
         if(index4ClassList.contains('x') && index7ClassList.contains('x')){
-            alert("X won");
+            winner.innerHTML= "<span style ='color:green'>X</span> Won!";
+            
         }
     }
 
 
     if(index2ClassList.contains('o')){
         if(index5ClassList.contains('o') && index8ClassList.contains('o')){
-            alert("O won");
+            winner.innerHTML= "<span style ='color:green'>O</span> Won!";
+            
         }
     }
 
     if(index2ClassList.contains('x')){
         if(index5ClassList.contains('x') && index8ClassList.contains('x')){
-            alert("X won");
+            winner.innerHTML= "<span style ='color:green'>X</span> Won!";
+            
         }
     }
 
     
     if(index0ClassList.contains('o')){
         if(index4ClassList.contains('o') && index8ClassList.contains('o')){
-            alert("O won");
+            winner.innerHTML= "<span style ='color:green'>O</span> Won!";
+            
         }
     }
 
 
     if(index0ClassList.contains('x')){
         if(index4ClassList.contains('x') && index8ClassList.contains('x')){
-            alert("X won");
+            winner.innerHTML= "<span style ='color:green'>X</span> Won!";
+            
         }
     }
-    
 
     if(index2ClassList.contains('o')){
         if(index4ClassList.contains('o') && index6ClassList.contains('o')){
-            alert("O won");
+            winner.innerHTML= "<span style ='color:green'>O</span> Won!";
+            
         }
     }
 
     if(index2ClassList.contains('x')){
         if(index4ClassList.contains('x') && index6ClassList.contains('x')){
-            alert("X won");
+            winner.innerHTML= "<span style ='color:green'>X</span> Won!";
+            
         }
     }
-
-
-
 }
-
 
 function cellHandler(event){
    const classList= event.target.classList;

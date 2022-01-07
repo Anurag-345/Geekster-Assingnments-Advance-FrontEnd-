@@ -21,9 +21,9 @@
                     person
                 </span>
                 <h3>Login</h3>
-                <input class="fields" type="text" placeholder="Enter your name" minlength="10">
-                <input class="fields" type="email" placeholder="Enter your eamil"  >
-                <input class="fields" type="password" placeholder="Enter your password" >
+                <input class="fields" type="text" placeholder="Enter your name" minlength="10" pattern="[a-Z]">
+                <input class="fields" type="email" placeholder="Enter your eamil" pattern="[a-z0-9.]+@+[a-z]+.+[a-z]" >
+                <input class="fields" type="password" placeholder="Enter your password" pattern="[a-zA-Z0-9@#$%^&*]" >
                 <input class="fields" type="password" placeholder="confirm your password" >
                 <input class="btn-primary" type="submit">
             </form>
