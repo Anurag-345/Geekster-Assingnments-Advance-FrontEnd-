@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factorial</title>
+    <title>Fizz-buzz</title>
     <style>
-        *{
+          *{
             margin: 0;
             padding: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -41,16 +41,16 @@
             width: 43%;
             padding: 4px 0;
             border-radius: 5px;
-            border: 2px solid turquoise;
+            border: 2px solid yellow;
             background-color: transparent;
-            color: turquoise;
+            color: #000000;
             font-weight: bold;
 
         }
 
         #btn:hover {
-            background-color: turquoise;
-            color: #ffffff;
+            background-color: yellow;
+            color: #000000;
 
         }
 
@@ -63,21 +63,24 @@
 
         #output {
             font-size: 20px;
-            color: green;
+            font-weight: bold;
+            
         }
-        
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h2>Factorial generator</h2>
-        <p id="output"></p>
-        <input type="number" id="inp">
-        <p> Please click below button to generate factorial</p>
+        <h2>fizz-Buzz</h2>
 
-        <button id="btn" onclick="factorial()">Click</button>
+        <input type="number" id="inp">
+        <p> Please click below button to generate fizz-Buzz series</p>
+        <button id="btn" onclick="game()">Click</button>
+        
     </div>
+
+    <p id="output"></p>
+
 
     <script>
         let btn = document.getElementById('btn');
@@ -86,23 +89,43 @@
 
         let input = document.querySelector("#inp");
 
-        function factorial() {
 
+        function game(){
             let n = input.value;
+            let liRef = document.createElement("li");
 
-            if (n == 0) {
-                output.innerHTML = `<span style=" color:#ff0000; transition: 2s ease-in-out;">Please enter any number !</spna>`;
-            } else {
+            if(n == 0){
+                output.innerHTML = `<span style="color:red;">Please enter any number!</span>`;
+            }
+            else{
 
-                let fact = 1;
                 for (let i = 1; i <= n; i++) {
 
-                    fact *= i;
+
+                let liRef = document.createElement('li');
+
+                    if (i % 3 == 0 && i % 5 == 0) {
+                        liRef.innerText = "fizz-buzz";
+                    }
+                    else if (i % 3 == 0) {
+                        liRef.innerText = "fizz";
+                    }
+                    else if (i % 5 == 0) {
+                        liRef.innerText = "Buzz";
+                    }
+                    else {
+                        liRef.innerText = i;
+                    }
+                    output.style.padding = "5em";
+                    output.appendChild(liRef);
 
                 }
-                output.innerHTML = `Factorial of ${n} is <span style="color:#000000; font-size:30px;">${fact}</span>`;
+                
+                
 
             }
+            
+            
         }
     </script>
 </body>
