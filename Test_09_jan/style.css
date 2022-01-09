@@ -1,0 +1,63 @@
+.mySlides {
+    display: none;
+}
+  
+body {
+  
+    font-family: Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.head {
+    margin-top: 20px;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 19px;
+    font-weight: bolder;
+}
+  
+.data-container {
+    width: 600px;
+    height: 384px;
+    position: relative;
+    margin: 0 auto;
+}
+  
+.bar {
+    width: 28px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(250, 193, 127);
+    transition: 0.2s all ease;
+}
+  
+.bar__id {
+    position: absolute;
+    top: -24px;
+    width: 100%;
+    text-align: center;
+}
+.btn1 {
+    padding: 12px;
+    font-weight: bolder;
+    background-color: transparent;
+    border:2px solid turquoise;
+    border-radius: 5px;
+    font-size: 16px;
+    margin:1em;
+}
+.btn2 {
+    padding: 12px;
+    font-weight: bolder;
+    background-color: transparent;
+    border:2px solid turquoise;
+    border-radius: 5px;
+    font-size: 16px;
+  
+}
