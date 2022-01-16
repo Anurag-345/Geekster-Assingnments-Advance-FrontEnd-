@@ -1,0 +1,23 @@
+*{
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+   display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+     background-color: #d7effd;
+}
+.center{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f6f9ff;
+    border-radius: 10px;
+    padding: 4em 2em;
+}
