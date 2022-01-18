@@ -31,7 +31,7 @@ time();
 // skip question
 let next = document.getElementById("next");
 
-let correctAnswer = "Formicidae";
+let correctAnswer = "Rhopalocera";
 
 function increment() {
   i++;
