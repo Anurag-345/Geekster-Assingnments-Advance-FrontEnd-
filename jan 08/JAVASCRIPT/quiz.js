@@ -30,9 +30,7 @@ time();
 
 // skip question
 let next = document.getElementById("next");
-
 let correctAnswer = "Rhopalocera";
-
 function increment() {
   i++;
 
@@ -58,7 +56,7 @@ function increment() {
       C.style.background = "white";
       D.style.background = "white";
     });
-}
+};
 
 next.addEventListener("click", increment);
 
