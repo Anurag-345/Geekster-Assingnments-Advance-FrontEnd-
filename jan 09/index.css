@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(122, 122, 122);
+  
+}
+.container{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1em;
+    font-size: x-large;
+    color: whitesmoke;
+}
+
+.stopwatch{
+    color:yellow;
+    font-size: x-large;
+}
+
+.laps{
+    height:fit-content;
+    background-color: black;
+    color:whitesmoke;
+    width: 30%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    margin:2em;
+}
+
+button{
+    padding:1em;
+    border-radius: 5px;
+    border:2px solid black;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+
