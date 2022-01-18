@@ -7,7 +7,7 @@
 "Formicidae",
 "Rhopalocera"
 ],
-"correctAnswer":"Formicidae"
+"correctAnswer":"Rhopalocera"
 },
 {
 "question": "How hot is the surface of the sun?",
@@ -17,7 +17,7 @@
 "12,130 K",
 "101,300 K"
 ],
-"correctAnswer": 1
+"correctAnswer":"5,778 K"
 },
 {
 "question": "Who are the actors in The Internship?",
@@ -27,7 +27,7 @@
 "Kaley Cuoco, Jim Parsons",
 "Vince Vaughn, Owen Wilson"
 ],
-"correctAnswer": 3
+"correctAnswer": "Vince Vaughn, Owen Wilson"
 },
 {
 "question": "What is the capital of Spain?",
@@ -37,7 +37,7 @@
 "Madrid",
 "San Juan"
 ],
-"correctAnswer": 2
+"correctAnswer":"Madrid"
 },
 {
 "question": "What are the school colors of the University of Texas at Austin?",
@@ -47,7 +47,7 @@
 "White, Burnt Orange",
 "White, Old gold, Gold"
 ],
-"correctAnswer": 2
+"correctAnswer":"White, Burnt Orange"
 },
 {
 "question": "What is 70 degrees Fahrenheit in Celsius?",
@@ -57,7 +57,7 @@
 "21.1111",
 "158"
 ],
-"correctAnswer": 2
+"correctAnswer": "21.1111"
 },
 {
 "question": "When was Mahatma Gandhi born?",
@@ -67,7 +67,7 @@
 "July 18, 1918",
 "January 15, 1929"
 ],
-"correctAnswer": 0
+"correctAnswer":"October 2, 1869"
 },
 {
 "question": "How far is the moon from Earth?",
@@ -77,7 +77,7 @@
 "238,400 miles (384,400 km)",
 "35,980,000 miles (57,910,000 km)"
 ],
-"correctAnswer": 2
+"correctAnswer": "238,400 miles (384,400 km)"
 },
 {
 "question": "What is 65 times 52?",
@@ -87,7 +87,7 @@
 "3380",
 "3520"
 ],
-"correctAnswer": 2
+"correctAnswer":"3380"
 },
 {
 "question": "How tall is Mount Everest?",
@@ -97,7 +97,7 @@
 "19,341 ft (5,895 m)",
 "29,029 ft (8,847 m)"
 ],
-"correctAnswer": 3
+"correctAnswer": "29,029 ft (8,847 m)"
 },
 {
 "question": "When did The Avengers come out?",
@@ -107,7 +107,7 @@
 "May 3, 2013",
 "April 4, 2014"
 ],
-"correctAnswer": 1
+"correctAnswer": "May 4, 2012"
 },
 {
 "question": "What is 48,879 in hexidecimal?",
@@ -117,6 +117,6 @@
 "0xDEAD",
 "0x12D591"
 ],
-"correctAnswer": 1
+"correctAnswer": "0xBEEF"
 }
 ]

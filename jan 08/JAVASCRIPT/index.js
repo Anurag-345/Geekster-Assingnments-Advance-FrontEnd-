@@ -10,6 +10,10 @@ rulesBtn.addEventListener('click', function(){
 
 });
 
-// document.addEventListener('click',function(){
-//      rulesDiv.style.display = "";
-// })
+let cross = document.getElementById('cross');
+
+cross.addEventListener('click', function() {
+
+     rulesDiv.style.display = "none";
+    
+})

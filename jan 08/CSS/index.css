@@ -13,8 +13,15 @@ a{
 
 .main{
 
- 
-  min-height: 100vh;
+ height: 100vh;
+  width: 100vw;
+  background: url("../images/simple.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
 
 }
 
@@ -45,7 +52,7 @@ a{
   padding: 12px 50px;
   border-radius: 2px;
   border: none;
-  background-color: #5d65ae;
+  background-color:#6dc1e6 ;
   color: white;
   font-weight: 800;
   margin: 1em;
@@ -56,11 +63,11 @@ a{
   height: 3.5em;
   width: 12em;
   display: block;
-  padding: 7px 40px;
+  padding:7px 40px;
   border-radius: 2px;
-  border: 3px solid #5d65ae;
+  border: 3px solid #6dc1e6;
   background-color:transparent ;
-  color: #5d65ae;
+  color: #6dc1e6;
   font-weight: 800;
   margin: 1em;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -68,23 +75,32 @@ a{
 
 .rules{
   display: flex;
+  /* justify-content: center; */
   gap: 1em;
   flex-direction: column;
   position:fixed;
   left:70vw;
   width:30vw;
-  height: 100vh;
-  background:linear-gradient(to right,#7389af,#748aaf,#657696);
+  height: 92vh;
+  background:linear-gradient(to right,#6dc1e6,#6dc1e6,#6dc1e6);
   opacity: 0.8;
-  align-self:right;
   z-index:100;
-  padding: 2em;
+  padding:1%;
   color:white;
   font-weight: bold;
   transition:4s;
   transition-delay: all 4s;
   display:none;
   
-
 } 
 
+#landing-img{
+  margin:2em;
+  height:20em;
+  width:50%;
+}
+
+#cross{
+  position: relative;
+  left: 80%;
+}

@@ -13,37 +13,49 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Libre+Franklin:wght@700&family=Lobster&family=Mochiy+Pop+P+One&family=Oswald:wght@300&family=Pacifico&family=Permanent+Marker&family=Petemoss&family=Roboto+Slab:wght@300&family=Titillium+Web&display=swap"
         rel="stylesheet">
-     
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Favicon -->
+    <!-- Fav-icon -->
     <link rel="icon" type="image/x-icon" href="images/cropped-favicon-Quiz-trivia-games-1.png">
 
     <!-- external Stylesheet -->
     <link rel="stylesheet" href="CSS/quiz.css">
 
 </head>
+
 <body>
     <div class="main">
         <div class="quiz-box">
-            <img id ="clock" src="images/timer.png">
+            <img id="clock" src="images/timer.png">
             <h1 id="timer"></h1>
             <div id="question"></div>
             <div class="options">
-                <div class="option" id="A"><input type="radio"></div>
-                <div class="option" id="B"><input type="radio"></div>
-                <div class="option" id="C"><input type="radio"></div>
-                <div class="option" id="D"><input type="radio"></div>
+                <button class="option" id="A"></button>
+                <button class="option" id="B"></button>
+                <button class="option" id="C"></button>
+                <button class="option" id="D">
             </div>
-
-                <button id="submit">Submit</button>
-        
-                    <h3 id="skip">SKIP<img 
-                        src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-skip-multimedia-kiranshastry-solid-kiranshastry.png" height="25%"></h3>
-
+            <button id="submit">Submit</button>
+           
+        </div>
+        <div class="win">
+            <div class="winResult">
+                <h1>CONGRATULATIONS!</h1>
+                <h2 id="winMessage"></h2>
+                <img src="images/celebration.png" width="50%">
+                <button id="next">NEXT</button>
+            </div>
+        </div>
+        <div class="lose">
+            <div class="loseResult">
+                <h1>OOPS!</h1>
+                <h1 id="loseMessage"></h1>
+                <img src="images/sad.png" width="40%">
+                <a id="restart" href="quiz.html">RESTART</a>
+            </div>
         </div>
     </div>
-
-
+    </div>
 
     <!-- external JS -->
     <script src="JAVASCRIPT/quiz.js"></script>

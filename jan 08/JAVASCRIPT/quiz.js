@@ -23,12 +23,47 @@ function time() {
   }
 }
 
-setInterval(time, 1000);
+let setIntervalId = setInterval(time, 1000);
 time();
 
 
 
 // skip question
+let next = document.getElementById("next");
+
+let correctAnswer = "Formicidae";
+
+function increment() {
+  i++;
+
+  console.log(i);
+
+  let data = fetch("quiz.json");
+  data
+    .then((Response) => Response.json())
+    .then((data) => {
+      question.innerHTML = data[i].question;
+      correctAnswer = data[i].correctAnswer;
+      A.innerHTML = data[i].answers[0];
+      B.innerHTML = data[i].answers[1];
+      C.innerHTML = data[i].answers[2];
+      D.innerHTML = data[i].answers[3];
+      counter = 121;
+      submit.disabled = false;
+      win.style.display = "none";
+
+      setInterval(time, 1000);
+      A.style.background = "white";
+      B.style.background = "white";
+      C.style.background = "white";
+      D.style.background = "white";
+    });
+}
+
+next.addEventListener("click", increment);
+
+
+
 
 
 let question = document.getElementById("question");
@@ -39,9 +74,12 @@ let D = document.getElementById("D");
 
 // console.log(A);
 
-let skip = document.getElementById("skip");
+
 
 let submit = document.getElementById("submit");
+
+let win = document.querySelector(".win");
+let lose = document.querySelector(".lose");
 
 let i = 0;
 
@@ -50,72 +88,81 @@ data
   .then((Response) => Response.json())
   .then((data) => {
     question.innerHTML = data[i].question;
-    let correctAnswer = data[i].correctAnswer;
+   
     A.innerHTML = data[i].answers[0];
     B.innerHTML = data[i].answers[1];
     C.innerHTML = data[i].answers[2];
     D.innerHTML = data[i].answers[3];
 
-    let options = document.getElementsByClassName("option");
+    let userAnswer = '';
+   
 
-    for (let j = 0; j < options.length; j++) {
-      {
-        options[j].addEventListener("click", function () {
-          const userAnswer = options[j].innerHTML;
+    A.addEventListener("click", function () {
+      A.style.background = "yellow";
+      B.style.background = "white";
+      C.style.background = "white";
+      D.style.background = "white";
+      userAnswer = A.innerHTML;
+     
+    });
+
+    B.addEventListener("click", function () {
+      B.style.background = "yellow";
+      A.style.background = "white";
+      C.style.background = "white";
+      D.style.background = "white";
+       userAnswer = B.innerHTML;
+      
+    });
+
+    C.addEventListener("click", function () {
+      C.style.background = "yellow";
+      B.style.background = "white";
+      D.style.background = "white";
+      A.style.background = "white";
+       userAnswer = C.innerHTML;
+      
+    });
+    D.addEventListener("click", function () {
+      D.style.background = "yellow";
+      B.style.background = "white";
+      C.style.background = "white";
+      A.style.background = "white";
+       userAnswer = D.innerHTML;
+      
+    });
+    let score = 0;
+    let winMessage = document.getElementById('winMessage');
+    let loseMessage = document.getElementById("loseMessage");
+   
     
-            options[j].style.background = "#E093BB";
-            options[j].onclick = 'null';
-         
-          submit.addEventListener('click',function(){
+    submit.addEventListener('click', function(){
 
-            if(userAnswer == correctAnswer){
-              options[j].style.background = "green";
-              submit.disabled = true;
-              
-            }
-            else{
-              options[j].style.background = "red";
-              submit.disabled = true;
-    
-            }
+      console.log(userAnswer);
+      console.log(correctAnswer);
 
-          })
-
-          // console.log(userAnswer)
-          // console.log(correctAnswer)
-         
-        });
+      if(userAnswer == correctAnswer){
+        win.style.display = "flex";
+        score += 1000;
+        winMessage.innerHTML = `you won ${score} points`;
+        console.log('correct')
+        submit.disabled =true;
+        clearInterval(setIntervalId);
       }
-    }
-    
+      else{
+        lose.style.display = "flex";
+        loseMessage.innerHTML = `Your answer is wrong`;
+        console.log('wrong');
+        submit.disabled = true;
+         clearInterval(setIntervalId);
+      }
+    });
+
+  
   });
 
 
-function increment(){
 
-  i++;
-  console.log(i);
-
-  let data = fetch("quiz.json");
-  data
-    .then((Response) => Response.json())
-    .then((data) => {
-      question.innerHTML = data[i].question;
-      A.innerHTML = data[i].answers[0];
-      B.innerHTML = data[i].answers[1];
-      C.innerHTML = data[i].answers[2];
-      D.innerHTML = data[i].answers[3];
-      counter = 121;
-
-  
-    });
-
-}
-
-skip.addEventListener("click", increment);
-
-
-// Answer check 
 
 
 
